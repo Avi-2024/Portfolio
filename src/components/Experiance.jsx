@@ -1,48 +1,44 @@
 import React from "react";
 import html from "../../public/html.png";
 import css from "../../public/css.jpg";
-import java from "../../public/java.png";
 import javascript from "../../public/javascript.png";
-import oracle from "../../public/oracle.png";
-import spring from "../../public/spring.png";
-import springBoot from "../../public/springBoot.jpg";
+import react1 from "../../public/react1.png";
+import mongodb from "../../public/mongodb.jpg"; 
+import node from "../../public/node.png";
 function Experiance() {
   const cardItem = [
     {
       id: 1,
       logo: html,
-      name: "MongoDB",
+      name: "HTML",
     },
     {
       id: 2,
       logo: css,
       name: "CSS",
     },
+   
     {
       id: 3,
-      logo: java,
-      name: "Java",
-    },
-    {
-      id: 4,
       logo: javascript,
       name: "JavaScript",
     },
     {
       id: 5,
-      logo: oracle,
-      name: "Oracle",
+      logo: react1,
+      name: "ReactJS",
     },
-    {
+     {
       id: 6,
-      logo: spring,
-      name: "Spring",
+      logo: node,
+      name: "NodeJS",
     },
     {
       id: 7,
-      logo: springBoot,
-      name: "Spring Boot",
-    },
+      logo: mongodb,
+      name: "MongoDB",
+    }
+   
   ];
   return (
     <div
@@ -52,7 +48,7 @@ function Experiance() {
       <div>
         <h1 className="text-3xl font-bold mb-5">Experiance</h1>
         <p className="  ">
-          I've more than 2 years of experiance in below technologies.
+          I've more than 3 months of experiance in below technologies.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-5 gap-7 my-3">
           {cardItem.map(({ id, logo, name }) => (

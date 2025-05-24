@@ -7,7 +7,7 @@ function Contact() {
   const {
     register,
     handleSubmit,
-
+    reset,
     formState: { errors },
   } = useForm();
 
@@ -18,8 +18,9 @@ function Contact() {
       message: data.message,
     };
     try {
-      await axios.post("https://getform.io/f/raeqjora", userInfo);
+      await axios.post("https://getform.io/f/bpjpjvrb", userInfo);
       toast.success("Your message has been sent");
+      reset();
     } catch (error) {
       console.log(error);
       toast.error("Something went wrong");
@@ -36,8 +37,7 @@ function Contact() {
         <div className=" flex flex-col items-center justify-center mt-5">
           <form
             onSubmit={handleSubmit(onSubmit)}
-            // action="https://getform.io/f/raeqjora"
-            // method="POST"
+            
             className="bg-slate-200 w-96 px-8 py-6 rounded-xl"
           >
             <h1 className="text-xl font-semibold mb-4">Send Your Message</h1>
